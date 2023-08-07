@@ -23,7 +23,7 @@ int main()
 	return 0;
 }
 
-void TrocaNumeros(int& Num1, int& Num2)
+void TrocaNumeros(int* Num1, int* Num2)
 {
 	// Como fazer a troca de valores com essa funcao  .
 	int Temp{ Num1 };
