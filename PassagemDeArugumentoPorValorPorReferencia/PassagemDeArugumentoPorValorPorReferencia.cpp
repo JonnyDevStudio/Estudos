@@ -26,10 +26,10 @@ int main()
 void TrocaNumeros(int* Num1, int* Num2)
 {
 	// Como fazer a troca de valores com essa funcao  .
-	int Temp{ Num1 };
+	int Temp{ *Num1 };
 	//Num 1 
-	Num1 = Num2;
-	Num2 = Temp;
+	*Num1 = *Num2;
+	*Num2 = Temp;
 
 	
 }
