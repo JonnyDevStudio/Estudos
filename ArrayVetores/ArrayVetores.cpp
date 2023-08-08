@@ -50,9 +50,16 @@ int main()
 	
 	std::cout << "\t******************EX-NOTAS (COM Arrray) ***********************" << "\n";
 
+	//criacao do array notas com 5 compartimentos, do indiced  0 ao 4 .Devem ser todas do mesmo tipo de dado, variavel compostas e homogenea.
 
 
+	float Notas[5]{1.0f, 2.0f, 3.0f,4.0f,5.0f};
+	int Medias;
 
+	std::cout << NomeAluno << "\n";
+	std::cout << "\tNota01 = " << Notas[0] << "\tNota02 = " << Notas[1] << "\tNota03 = " << Notas[2]<< "\tNota04 = " << Notas[3]<< "\tNota05 = " << Notas[4]<< "\n";
+	Medias = (Notas[0] + Notas[1] + Notas[2] + Notas[3] + Notas[4]) / 5;
+	std::cout << "Sua media e  :" << Medias << "\n";
 
 	system("PAUSE");
 	return 0;
