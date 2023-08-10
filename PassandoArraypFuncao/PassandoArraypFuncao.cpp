@@ -6,7 +6,16 @@ void MostrarVetor(int Array[], int TamVetor);
 int main()
 {
 	int Vetor[] = { 1,2,3,4,5,6,7,8,9,10 };
-	MostrarVetor(Vetor, 10);
+
+	//Sizeof devolve o numero em bytes do tamanho de uma variavel,logo sizeof(Vetor) vai devolver o numero de elementos do vetor multiplicado pelo tamannho do seu tipo
+	int TamanhoVetor = sizeof(Vetor);
+
+
+	std::cout << "\nTamanho Vetor: " << TamanhoVetor;
+	std::cout << "\nTamanho de um float: " << sizeof(float);
+	std::cout << "\nTamanho de um int: " << sizeof(int);
+
+	MostrarVetor(Vetor, TamanhoVetor);
 
 
 
